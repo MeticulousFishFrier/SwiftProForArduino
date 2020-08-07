@@ -193,12 +193,12 @@ void swift_run()
 
 unsigned char getXYZFromAngleOrigin(float& x, float& y, float& z, float rot, float left, float right)
 {
-	// 閿熸枻鎷稾Y骞抽敓鏂ゆ嫹閿熼叺闃熷府鎷烽敓鏂ゆ嫹�?	
+	// 閿熸枻鎷稾Y骞抽敓鏂ゆ嫹閿熼叺闃熷府鎷烽敓鏂ゆ嫹�?	
 	
 	
 	double stretch = MATH_LOWER_ARM * cos(left / MATH_TRANS) + MATH_UPPER_ARM * cos(right / MATH_TRANS) + MATH_L2;
 
-	// 閿熸枻鎷穁閿熸枻鎷烽敓閰甸槦甯嫹閿熸枻鎷烽�?
+	// 閿熸枻鎷穁閿熸枻鎷烽敓閰甸槦甯嫹閿熸枻鎷烽�?
 	double height = MATH_LOWER_ARM * sin(left / MATH_TRANS) - MATH_UPPER_ARM * sin(right / MATH_TRANS) + MATH_L1;
 	x = stretch * cos(rot / MATH_TRANS);
 	y = stretch * sin(rot / MATH_TRANS);
@@ -1401,7 +1401,6 @@ void uarm_gcode_M2410()
 		if (isPowerPlugIn())
 		{
 			value = get_current_height();
-			value += 0.3;
 		}
 	}
 

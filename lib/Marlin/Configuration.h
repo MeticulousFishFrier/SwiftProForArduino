@@ -143,7 +143,7 @@
 
 #define DEVICE_NAME "SwiftPro"
 
-#define SEGMENTS_PER_SECOND	100 
+#define SEGMENTS_PER_SECOND	100
 
 
 // Optional custom name for your RepStrap or other custom machine
@@ -781,7 +781,7 @@
 #define GEAR_RATIO	4.5
 #define DEFAULT_AXIS_STEPS_PER_UNIT   	{	DECELERATE_MULTIPLE*MIROC*GEAR_RATIO,\
 											DECELERATE_MULTIPLE*MIROC*GEAR_RATIO,\
-											DECELERATE_MULTIPLE*MIROC*GEAR_RATIO, 360/3.1415926/12*16/1.8}  
+											DECELERATE_MULTIPLE*MIROC*GEAR_RATIO, 360/3.1415926/12*16/1.8}
 
 
 
@@ -813,7 +813,7 @@
 // M501 - reads parameters from EEPROM (if you need reset them after you changed them temporarily).
 // M502 - reverts to the default "factory settings".  You still need to store them in EEPROM afterwards if you want to.
 //define this to enable EEPROM support
-//#define EEPROM_SETTINGS
+#define EEPROM_SETTINGS
 
 #if ENABLED(EEPROM_SETTINGS)
   // To disable EEPROM Serial responses and decrease program space by ~1700 byte: comment this out:
@@ -837,7 +837,7 @@
 //
 // G20/G21 Inch mode support
 //
-//#define INCH_MODE_SUPPORT
+#define INCH_MODE_SUPPORT
 
 //
 // M149 Set temperature units support
@@ -849,7 +849,7 @@
 // Preheat Constants
 #define PREHEAT_1_TEMP_HOTEND 180
 #define PREHEAT_1_TEMP_BED     70
-#define PREHEAT_1_FAN_SPEED     0 // Value from 0 to 255
+#define PREHEAT_1_FAN_SPEED   255 // Value from 0 to 255
 
 #define PREHEAT_2_TEMP_HOTEND 240
 #define PREHEAT_2_TEMP_BED    110
